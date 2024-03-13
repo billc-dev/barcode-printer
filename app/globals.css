@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-svg {
+#barcode > svg {
   height: 40px !important;
   /* max-height: 60px !important; */
   width: 100% !important;
