@@ -8,6 +8,7 @@ import { ChangeEventHandler, useEffect, useRef, useState } from "react";
 import Barcode from "react-barcode";
 import { useReactToPrint } from "react-to-print";
 import * as XLSX from "xlsx";
+import { seed } from "./seed";
 
 registerAllModules();
 
@@ -121,6 +122,9 @@ export default function Home() {
           />
         </div>
       </div>
+      <form action={seed}>
+        <button type="submit">Seed</button>
+      </form>
       <div className="mx-2 mb-2">
         <p>選擇 Excel 或 csv 檔案</p>
         <input type="file" onChange={handleFileChange} />
